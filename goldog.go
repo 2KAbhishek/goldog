@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"os"
 )
 
 func colorize(i int) (int, int, int) {
@@ -18,4 +19,14 @@ func display(text []rune) {
 		fmt.Printf("\033[38;2;%d;%d;%dm%c\033[0m", r, g, b, text[j])
 	}
 	fmt.Println()
+}
+
+func main() {
+	inputInfo, _ := os.Stdin.Stat()
+	// var input []rune
+
+	if inputInfo.Mode()&os.ModeCharDevice != 0 {
+		warn := []rune("goldog works with pipe inputs.\nUsage: command | goldog")
+		display(warn)
+	}
 }
