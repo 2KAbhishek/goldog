@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"io"
 	"math"
 	"os"
 )
@@ -23,10 +25,21 @@ func display(text []rune) {
 
 func main() {
 	inputInfo, _ := os.Stdin.Stat()
-	// var input []rune
+	var text []rune
 
 	if inputInfo.Mode()&os.ModeCharDevice != 0 {
 		warn := []rune("goldog works with pipe inputs.\nUsage: command | goldog")
 		display(warn)
 	}
+
+	reader := bufio.NewReader(os.Stdin)
+	for {
+		input, _, err := reader.ReadRune()
+		if err != nil && err == io.EOF {
+			break
+		}
+		text = append(text, input)
+	}
+
+	display(text)
 }
