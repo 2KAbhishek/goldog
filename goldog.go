@@ -30,6 +30,7 @@ func main() {
 	if inputInfo.Mode()&os.ModeCharDevice != 0 {
 		warn := []rune("goldog works with pipe inputs.\nUsage: command | goldog")
 		display(warn)
+		os.Exit(1)
 	}
 
 	reader := bufio.NewReader(os.Stdin)
