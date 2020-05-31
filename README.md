@@ -9,30 +9,23 @@
 ![Contributors](https://img.shields.io/github/contributors/2kabhishek/goldog?style=plastic&color=ff69b4&label=Contributors)
 ![Followers](https://img.shields.io/github/followers/2kabhishek?style=plastic&color=blue&label=Followers)
 
-goldog is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+goldog is a CLI tool that colorizes any input piped to it.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
+- You have installed the latest version of `go`
 
 ## Installing goldog
 
 To install goldog, follow these steps:
 
-Linux & Mac OS:
-
 ```bash
 git clone https://github.com/2kabhishek/goldog
 cd goldog
-<install_command>
-```
-
-Windows:
-
-```bash
-<install_command>
+go build
+go install
 ```
 
 ## Using goldog
@@ -40,7 +33,5 @@ Windows:
 To use goldog, follow these steps:
 
 ```bash
-<usage_example>
+<command> | goldog
 ```
-### More Info
-
