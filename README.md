@@ -33,5 +33,6 @@ go install
 To use goldog, follow these steps:
 
 ```bash
-<command> | goldog
+USAGE:
+    <command> | goldog
 ```
