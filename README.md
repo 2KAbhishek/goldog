@@ -1,5 +1,3 @@
-<div align="center">
-
 # goldog
 
 ![Size](https://img.shields.io/github/repo-size/2kabhishek/goldog?style=plastic&color=0f0&label=Size)
@@ -12,7 +10,6 @@
 
 goldog is a CLI tool that colorizes any input piped to it.
 
-</div>
 
 ## Prerequisites
 
@@ -39,5 +36,4 @@ To use goldog, follow these steps:
 USAGE:
     <command> | goldog
 ```
-Please consider hitting the ⭐ star button if this repo was useful to you, any contributions and suggestions are welcome.
 
