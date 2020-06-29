@@ -10,7 +10,6 @@
 
 goldog is a CLI tool that colorizes any input piped to it.
 
-
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -36,4 +35,3 @@ To use goldog, follow these steps:
 USAGE:
     <command> | goldog
 ```
-
